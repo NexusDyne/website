@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NexusDyne - Dynamic Software Development and Consultancy Services">
+  <title>NexusDyne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: no-repeat url(bg-logo.svg) top center;
+      background-color: #1a1a1a;
+      /**background: linear-gradient(to bottom, #121212, #1a1a1a);*/
+      color: #ffffff;
+      line-height: 1.6;
+      position: relative;
+    }
+    header, .hero, .services, .contact, footer {
+      position: relative;
+      z-index: 1;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    header h1 {
+      color: #00c4b0;
+      margin: 0;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00c4b0;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px;
+      
+    }
+    .hero h2 {
+      color: #00c4b0;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      color: #cccccc;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #00c4b0;
+      color: #121212;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn:hover {
+      background-color: #ffffff;
+      color: #00c4b0;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+    }
+    .service-card {
+      border: 2px solid #00c4b0;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00c4b0;
+    }
+    .service-card h3 {
+      color: #00c4b0;
+      margin-bottom: 10px;
+    }
+    .service-card p {
+      color: #cccccc;
+      margin: 0;
+    }
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .contact h2 {
+      color: #00c4b0;
+      margin-bottom: 20px;
+    }
+    .contact p {
+      color: #cccccc;
+      font-size: 1.1em;
+    }
+    .contact a {
+      color: #00c4b0;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #cccccc;
+    }
+    footer a {
+      color: #00c4b0;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const _1 = "gm";
+      const _2 = "nexusdyne.com";
+      const _3 = `${_1}@${_2}`;
+      const _4 = `${_1} at ${_2}`;
+      const _5 = document.getElementById("email-link");
+      _5.textContent = _4;
+      _5.addEventListener("click", function() {
+        window.location.href = `mailto:${_3}`;
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>NexusDyne</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Dynamic Solutions. Connected Futures.</h2>
+    <p>System &amp; software design, development and consultancy services.</p>
+    <!-- <button class="btn">Get Started</button> -->
+  </section>
+  <section id="services" class="services">
+    <div class="service-card">
+      <h3>Software Development</h3>
+      <p>Custom software solutions tailored to your needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>Design Services</h3>
+      <p>System and software requirements analysis and design.</p>
+    </div>
+    <div class="service-card">
+      <h3>Technology Consulting</h3>
+      <p>Expert guidance to align your tech strategy with business goals.</p>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <p>Email us at <a id="email-link" href="#">[email protected]</a></p>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 NexusDyne Single Member P.C. All rights reserved.</p>
+    <a href="https://www.linkedin.com/company/nexusdyne">LinkedIn</a>
+    <a href="https://github.com/NexusDyne">GitHub</a>
+  </footer>
+</body>
+</html>
